@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="style/main.css">
+
+
+	<!--Responsividade-->
+	<link rel="stylesheet" href="style/responsive.css">
+	
+
+	<title>CV Artur Araujo</title>
+</head>
+
+<body>
+	<header>
+		<div class="container">
+			<h2 class="logo"> Curriculum Vitæ</h2>
+			<nav>
+				<a href="#">Experiência</a>
+				<a href="#">Eng Civil</a>
+				<a href="#">Gestão Empresarial</a>
+				<a href="#">Eng Software</a>
+				<a href="#">Voluntariado</a>
+			</nav>
+		</div>
+	</header>
+
+	<main>
+		<div class="filme-principal">
+			<div class="margem">
+				<h3 class="titulo">Artur Araujo</h3>
+				<p class="descricao">Engenheiro Civil, Pós graduando em Gestão Empresarial
+					 e  graduando em Engenharia de Software, conheça toda a história de Artur.</p>
+				<div class="botoes">
+					<button role="button" class="botao">
+						<!--Esse role é pra garantir que em qqer canto que for renderizando, seja um botao-->
+						<i class="fas fa-play"></i>
+						QUERO SABER MAIS
+					</button>
+					<button role="button" class="botao">
+						<i class="fas fa-info-circle"></i>
+						MAIS INFORMAÇÕES
+					</button>
+				</div>
+			</div>
+
+		</div>
+
+	</main>
+
+	<div class="box-principal">
+		<section>
+			<h2 class="titulo-box">Experiência Profissional</h2>
+			<div class="container">
+				<div class="produto">
+					<img class="produto" src="img/Experiencia/GestaoPet.png">
+				</div>
+				<div class="produto">
+					<img class="produto" src="img/Experiencia/dro.png">
+				</div>
+				<div class="produto">
+					<img class="produto" src="img/Experiencia/consult.png">
+				</div>
+				<div class="produto">
+					<img class="produto" src="img/Experiencia/ifpb.png">
+				</div>
+				<div class="produto">
+					<img class="produto" src="img/Experiencia/merc.png">
+				</div>
+
+			</div>
+		</section>
+
+		<section class="eng-civil">
+			<h2 class="titulo-box">Engenharia Civil</h2>
+			<div class="container">
+					<div class="produto">
+						<img class="produto" src="img/Eng Civil/autocad.png">
+					</div>
+					<div class="produto">
+						<img class="produto" src="img/Eng Civil/msproject.png">
+					</div>
+					<div class="produto">
+						<img class="produto" src="img/Eng Civil/navis.png">
+					</div>
+					<div class="produto">
+						<img class="produto" src="img/Eng Civil/orcamento.png">
+					</div>
+					<div class="produto">
+						<img class="produto" src="img/Eng Civil/revit.png">
+					</div>
+			</div>
+		</section>
+
+		<section class="gestao-empresarial">
+			<h2 class="titulo-box">Gestão Empresarial</h2>
+			<div class="carrosel-filmes">
+				<div class="owl-carousel owl-theme">
+					<div class="item">
+						<img class="box-filme" src="img/Gestao Emp/diagnostico.jpg">
+					</div>
+					<div class="item">
+						<img class="box-filme" src="img/Gestao Emp/excel.png">
+					</div>
+					<div class="item">
+						<img class="box-filme" src="img/Gestao Emp/gestao financeira.png">
+					</div>
+					<div class="item">
+						<img class="box-filme" src="img/Gestao Emp/fluxo de caixa.png">
+					</div>
+
+					<div class="item">
+						<img class="box-filme" src="img/Gestao Emp/IPOG.jpg">
+					</div>	
+				</div>
+
+			</div>
+		</section>
+
+		<section class="eng-software">
+			<h2 class="titulo-box">Engenharia de Software</h2>
+			<div class="carrosel-filmes">
+				<div class="owl-carousel owl-theme">
+					<div class="item">
+						<img class="box-filme" src="img/Eng Soft/CSS.png">
+					</div>
+					<div class="item">
+						<img class="box-filme" src="img/Eng Soft/HTML.png">
+					</div>
+					<div class="item">
+						<img class="box-filme" src="img/Eng Soft/JS.png">
+					</div>
+					<div class="item">
+						<img class="box-filme" src="img/Eng Soft/POWER BI.png">
+					</div>
+					<div class="item">
+						<img class="box-filme" src="img/Eng Soft/python.jpg">
+				</div>
+			</div>
+		</section>		
+
+		<section class="voluntariado">
+			<h2 class="titulo-box">Voluntariado</h2>
+			<div class="carrosel-filmes">
+				<div class="owl-carousel owl-theme">
+					<div class="item">
+						<img class="box-filme" src="img/Voluntario/CAEC.png">
+					</div>
+
+					<div class="item">
+						<img class="box-filme" src="img/Voluntario/praça.png">
+					</div>					
+					<div class="item">
+						<img class="box-filme" src="img/Voluntario/huac.png">
+					</div>
+					<div class="item">
+						<img class="box-filme" src="img/Voluntario/Logo - Discípulos em Campina Grande-06.png">
+					</div>
+					<div class="item">
+						<img class="box-filme" src="img/Voluntario/rotaract.jpg">
+					</div>
+				</div>
+
+			</div>
+		</section>
+	</div>
+	<!--Para evitar problemas, é melhor sempre jogar o JS pro final da pag-->
+	<script src="https://kit.fontawesome.com/2c36e9b7b1.js"></script>
+	<script src="js/Owl/jquery.min.js"></script>
+	<script src="js/Owl/owl.carousel.min.js"></script>
+	<script src="js/Owl/setup.js"></script>
+</body>
+
+<!--
+<footer>
+	<div>
+
+	</div>
+	<img src="logo-branco.png" alt="Logo da Barbearia Alura">
+	<p class="copy">&copy; Copyright Artur Araujo - 2022</p>
+</footer>
+-->
+</html>

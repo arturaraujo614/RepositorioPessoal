@@ -1,0 +1,146 @@
+:root{
+  --vermelho:#E50914;
+  --preto:#141414;
+}
+
+* { /*Reset simples*/
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+ /*BASE*/
+
+body{
+  background: var(--preto); /*Esse var é pq tou usando a variavel --preta*/
+  font-family: 'Arial', Times, serif;
+  color:white
+}
+
+header .container{
+  display: flex; /*Isso permite alinhar melhor os elementos internos*/
+  flex-direction: row; /*tendencia de jogar os elementos como linhas*/;
+  align-items: center; /*alinha verticalmente*/
+  justify-content:space-between ; /*alinha horizontalmente*/
+}
+
+header .logo {
+  margin-left: 5px;
+  color: var(--vermelho);
+  font-family: 'Ubuntu', sans-serif;
+  font-size: 40px;
+}
+
+header nav a{
+  text-decoration: none;
+  color: #AAA;
+  margin-right: 10px;
+}
+
+header nav a:hover {
+  color: #fff;
+}
+
+
+.filme-principal {
+  
+  font-size: 16px;
+  background: linear-gradient(rgba(0,0,0,.5),rgba(0,0,0,0.5)) ,url('/img/capa-house.jpg');
+  background-size:cover;
+  height: 600px;
+  display: flex; /*Apenas quem vai herdar isso são as filhas, não as netas*/
+  flex-direction: column;
+  justify-content: center; /*Ele sempre segue a direção do flex-direction*/
+  align-items: flex-start;
+}
+
+.filme-principal .descricao {
+  margin-top: 10px;
+  margin-bottom: 90px;
+}
+
+.filme-principal .titulo {
+  margin-top: 15%;
+  font-size: 40px;
+  font-family: 'Trebuchet MS', Arial, sans-serif;
+}
+
+.botao {
+  background-color: rgba(0,0,0,.5);
+  border: none;
+  color: white;
+  padding: 15px 30px;
+  margin-right: 15px;
+  font-size: 12px;
+  cursor: pointer;
+  transition: .3s ease all;
+}
+
+.botao:hover {
+  background-color: white;
+  color: black;
+}
+
+.botao i {
+  margin-right: 8px;
+}
+
+.margem {
+  margin-left: 20px;
+}
+
+.container {  
+	display: flex; 
+  flex-Direction: row;
+	justify-content: center;
+  flex-flow: row wrap;
+        max-width: 1200px;
+	margin: 0 auto;
+	}
+
+.filme-principal .margem {
+  width: 70%;
+}
+
+.produto {  
+	display: flex; 
+	justify-content: center;
+  align-items: center;
+	border: .15px solid #ccc; 
+	border-radius: 8px;
+	width: 90%;
+  height: 40%;
+  max-width: 12rem;
+  margin: 0.25rem 0.15rem; 
+	}
+
+.produto:hover {
+    width: 110%; /* Aumenta a largura da imagem ao passar o mouse */
+    height: auto; /* Mantém a proporção da imagem */
+    z-index: 1; /* Move a imagem para o topo */
+    transition: width 0.5s, height 0.5s;
+    margin: 0px;
+    border: 0px
+}
+
+
+.titulo-box {
+  margin: 20px 0 10px 0;
+  font-size: x-large;
+  font-family: 'Trebuchet MS', Arial, sans-serif;
+}
+
+.box-principal {
+  margin: 0px 30px 0 40px  ;
+}
+
+.copy {
+  color: #FFFFFF;
+  font-size: 13px;
+  margin:20px 0 0 ;
+}
+
+.carrosel-filmes .box-filme:hover { /*isso é uma pseudo classe*/
+  filter: brightness(.4);
+  padding: 10px;
+}
+
