@@ -1,21 +1,22 @@
+/* CONFIG GERAIS */
 :root{
   --vermelho:#E50914;
   --preto:#141414;
 }
 
-* { /*Reset simples*/
+* { 
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
- /*BASE*/
 
 body{
-  background: var(--preto); /*Esse var é pq tou usando a variavel --preta*/
+  background: var(--preto);
   font-family: 'Arial', Times, serif;
   color:white
 }
 
+/* STYLE HEAD */
 header .container{
   display: flex; /*Isso permite alinhar melhor os elementos internos*/
   flex-direction: row; /*tendencia de jogar os elementos como linhas*/;
@@ -40,28 +41,36 @@ header nav a:hover {
   color: #fff;
 }
 
-
-.filme-principal {
-  
+/* STYLE BODY - MAIN */
+.principal {
   font-size: 16px;
-  background: linear-gradient(rgba(0,0,0,.5),rgba(0,0,0,0.5)) ,url('/img/capa-house.jpg');
+  background: linear-gradient(rgba(0,0,0,.5),rgba(0,0,0,0.5));
   background-size:cover;
-  height: 600px;
+  height: 300px;
   display: flex; /*Apenas quem vai herdar isso são as filhas, não as netas*/
   flex-direction: column;
   justify-content: center; /*Ele sempre segue a direção do flex-direction*/
   align-items: flex-start;
 }
 
-.filme-principal .descricao {
+.principal .descricao {
   margin-top: 10px;
   margin-bottom: 90px;
+  text-align: justify;
 }
 
-.filme-principal .titulo {
-  margin-top: 15%;
+.principal .titulo {
+  margin-top: 5%;
   font-size: 40px;
   font-family: 'Trebuchet MS', Arial, sans-serif;
+}
+
+.principal .margem {
+  width: 70%;
+}
+
+.margem {
+  margin-left: 20px;
 }
 
 .botao {
@@ -80,12 +89,15 @@ header nav a:hover {
   color: black;
 }
 
-.botao i {
-  margin-right: 8px;
+/* STYLE BODY - BOX-PRINCIPAL */
+.box-principal {
+  margin: 0px 30px 0 40px  ;
 }
 
-.margem {
-  margin-left: 20px;
+.titulo-box {
+  margin: 20px 0 10px 0;
+  font-size: x-large;
+  font-family: 'Trebuchet MS', Arial, sans-serif;
 }
 
 .container {  
@@ -96,10 +108,6 @@ header nav a:hover {
         max-width: 1200px;
 	margin: 0 auto;
 	}
-
-.filme-principal .margem {
-  width: 70%;
-}
 
 .produto {  
 	display: flex; 
@@ -123,24 +131,10 @@ header nav a:hover {
 }
 
 
-.titulo-box {
-  margin: 20px 0 10px 0;
-  font-size: x-large;
-  font-family: 'Trebuchet MS', Arial, sans-serif;
-}
-
-.box-principal {
-  margin: 0px 30px 0 40px  ;
-}
+/* STYLE FOOTER */
 
 .copy {
   color: #FFFFFF;
   font-size: 13px;
   margin:20px 0 0 ;
 }
-
-.carrosel-filmes .box-filme:hover { /*isso é uma pseudo classe*/
-  filter: brightness(.4);
-  padding: 10px;
-}
-
