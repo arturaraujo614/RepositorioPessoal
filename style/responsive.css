@@ -23,8 +23,15 @@
 @media screen and (min-width:1000px) {
     .descricao {
         width: 50%;
+        bottom: 130px; /* Distância do texto ao fundo */
+        padding-left: 30px;
     }
     .principal {
-        height: 400px;
+        height: 500px;
+        width: 1366px;
+    }
+    .botao {
+        bottom: 0px;
+        width: 200px;
     }
 }

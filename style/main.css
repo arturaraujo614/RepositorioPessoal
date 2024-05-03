@@ -42,29 +42,38 @@ header nav a:hover {
 }
 
 /* STYLE BODY - MAIN */
+
+.imagem {
+  background-color: rgba(red, green, blue, alpha);
+  background-position: center; /* Centraliza a imagem */
+  color: white; /* Define a cor do texto */
+  text-align: left; /* Alinha o texto à esquerda */
+  padding: 0px; /* Adiciona um espaço interno */
+  justify-content: left; /* Centraliza verticalmente */
+  align-items: flex-start; /* Alinha os itens à esquerda */
+  
+}
 .principal {
-  font-size: 16px;
-  background: linear-gradient(rgba(0,0,0,.5),rgba(0,0,0,0.5));
   background-size:cover;
-  height: 300px;
   display: flex; /*Apenas quem vai herdar isso são as filhas, não as netas*/
   flex-direction: column;
-  justify-content: center; /*Ele sempre segue a direção do flex-direction*/
-  align-items: flex-start;
 }
 
-.principal .descricao {
+.descricao {
   margin-top: 10px;
-  margin-bottom: 90px;
   text-align: justify;
 }
 
-.principal .titulo {
-  margin-top: 5%;
+.titulo {
+  padding-left: 30px;
+  margin-bottom: 0px;
   font-size: 40px;
   font-family: 'Trebuchet MS', Arial, sans-serif;
 }
 
+.box-master{
+  margin-top: 280px;
+}
 .principal .margem {
   width: 70%;
 }
@@ -78,7 +87,9 @@ header nav a:hover {
   border: none;
   color: white;
   padding: 15px 30px;
-  margin-right: 15px;
+  left: 50px;
+  margin-left: 30px;
+  margin-top: 5px;
   font-size: 12px;
   cursor: pointer;
   transition: .3s ease all;
