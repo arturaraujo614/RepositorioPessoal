@@ -80,10 +80,6 @@ header nav a:hover {
   display: flex;
 }
 
-.box-secundario{
-  
-}
-
 .principal .margem {
   width: 70%;
 }
@@ -149,6 +145,31 @@ header nav a:hover {
     transition: width 0.5s, height 0.5s;
     margin: 0px;
     border: 0px
+}
+
+input[type="text"], textarea {
+  background-color:var(--preto);
+  color: white;
+  width: 90%;
+  padding: 1%;
+}
+
+/* Estilizando o botão de envio */
+input[type="submit"] {
+  border: none; /* Remove a borda */
+  background-color: black; /* Define a cor de fundo como preta */
+  color: white; /* Define a cor do texto como branca */
+  padding: 10px 20px; /* Adiciona espaçamento interno */
+  cursor: pointer; /* Altera o cursor para indicar que é clicável */
+}
+
+/* Estilizando os rótulos */
+label {
+  font-size: large; /* Altera o tipo de letra */
+}
+
+input[type="submit"]:hover {
+  background-color: #333; /* Altera a cor de fundo ao passar o mouse sobre o botão */
 }
 
 .paragrafo-com-bolinha::before {
