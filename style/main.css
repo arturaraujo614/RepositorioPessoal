@@ -13,7 +13,8 @@
 body{
   background: var(--preto);
   font-family: 'Arial', Times, serif;
-  color:white
+  color:white;
+  text-decoration: none;
 }
 
 /* STYLE HEAD */
@@ -48,8 +49,8 @@ header nav a:hover {
   color: white; /* Define a cor do texto */
   text-align: left; /* Alinha o texto à esquerda */
   padding: 0px; /* Adiciona um espaço interno */
-  justify-content: left; /* Centraliza verticalmente */
-  align-items: flex-start; /* Alinha os itens à esquerda */
+  justify-content: left;
+  align-items: flex-start; 
   
 }
 
@@ -96,10 +97,20 @@ header nav a:hover {
 }
 
 .box3 {
-  color:white; /* Define a cor do texto para preto */
+  color:white; /* Define a cor do texto para branco */
   text-decoration: none; /* Remove o sublinhado do link */
   padding-top: 5%;
   font-size: 30px;
+}
+
+a {
+  color: white; /* Define a cor do texto dos links para branco */
+  text-decoration: none; /* Remove o sublinhado padrão dos links */
+}
+
+a:hover {
+  color: #ffffff; /* Muda a cor do texto dos links quando passar o mouse para branco */
+  text-decoration: none; /* Mantém o sublinhado removido quando passar o mouse */
 }
 
 .box3:hover{
